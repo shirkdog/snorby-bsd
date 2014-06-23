@@ -294,7 +294,7 @@ rehash
 chown -R www:www /usr/local/www/Snorby
 cd /usr/local/www/Snorby
 bundle pack
-bundle install --path vender/cache
+bundle install --path vendor/cache
 bundle exec rake snorby:setup 
 mysql -uroot -ps3cr3tsauce -e "GRANT ALL ON snorby.* TO snorby@localhost IDENTIFIED BY 's3cr3tsauce';"
 mysql -uroot -ps3cr3tsauce -e "FLUSH PRIVILEGES;"
